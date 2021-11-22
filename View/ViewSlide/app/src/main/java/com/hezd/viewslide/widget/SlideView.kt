@@ -17,7 +17,6 @@ class SlideView @JvmOverloads constructor(context: Context, attrs: AttributeSet?
         if (scroller.computeScrollOffset()) {
             (parent as View).scrollTo(scroller.currX, scroller.currY)
             postInvalidate()
-            (parent as View).postInvalidate()
         }
     }
 
