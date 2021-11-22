@@ -10,11 +10,13 @@ import com.hezd.viewslide.utils.VERTICAL_OFFSET
  *@author hezd
  *Create on 2021/11/19 16:16
  */
-class SlideByAnimationActivity :BaseSlideActivity() {
+class SlideByAnimationActivity : BaseSlideActivity() {
     override fun slide() {
         val translateAnimation = TranslateAnimation(
             0f,
-            (HORIZONTAL_OFFSET-slideView.left).toFloat(), 0f, (VERTICAL_OFFSET-slideView.top).toFloat()
+            (HORIZONTAL_OFFSET - slideView.left).toFloat(),
+            0f,
+            (VERTICAL_OFFSET - slideView.top).toFloat()
         )
         translateAnimation.duration = 500
         translateAnimation.fillAfter = true

@@ -12,6 +12,11 @@ import com.hezd.viewslide.utils.VERTICAL_OFFSET
  */
 class SlideByLayoutActivity : BaseSlideActivity() {
     override fun slide() {
-        slideView.layout(HORIZONTAL_OFFSET,VERTICAL_OFFSET,HORIZONTAL_OFFSET+slideView.width,VERTICAL_OFFSET+slideView.height)
+        slideView.layout(
+            HORIZONTAL_OFFSET,
+            VERTICAL_OFFSET,
+            HORIZONTAL_OFFSET + slideView.width,
+            VERTICAL_OFFSET + slideView.height
+        )
     }
 }
